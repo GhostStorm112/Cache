@@ -1,0 +1,27 @@
+{
+	"name": "ghost-cache",
+	"version": "0.0.1",
+	"description": "GhostStorm Cache",
+	"main": "index.js",
+	"repository": "",
+	"author": "_112",
+	"license": "MIT",
+	"dependencies": {
+		"raincache": "DasWolke/RainCache#dev",
+		"Core": "https://gitlab.com/GhostStorm/Core.git"
+	},
+	"devDependencies": {
+		"eslint": "^4.19.1",
+		"eslint-config-standard": "^11.0.0-beta.0",
+		"eslint-plugin-import": "^2.8.0",
+		"eslint-plugin-node": "^6.0.0",
+		"eslint-plugin-promise": "^3.6.0",
+		"eslint-plugin-standard": "^3.0.1"
+	},
+	"eslintConfig": {
+		"extends": "aqua",
+		"rules": {
+			"no-console": 0
+		}
+	}
+}
