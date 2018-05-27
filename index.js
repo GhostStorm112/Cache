@@ -10,7 +10,7 @@ const amqp = new RainCache.Connectors.AmqpConnector({
   amqpQueue: 'weather-pre-cache',
   sendQueue: 'weather-events'
 })
-const redis = new RainCache.Engines.RedisStorageEngine({ password: process.env.REDIS_PASS })
+const redis = new RainCache.Engines.RedisStorageEngine({ host: process.env.REDIS_URL, password: process.env.REDIS_PASS })
 
 const cache = new RainCache({ storage: { default: redis }, debug: false }, amqp, amqp)
 
