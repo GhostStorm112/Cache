@@ -7,7 +7,7 @@ CMD yarn test
 WORKDIR /app
 #  Install dependencies
 RUN apk add --update \
-&& apk add --no-cache ffmpeg opus ca-certificates \
+&& apk add --no-cache ca-certificates \
 && apk add --no-cache --virtual .build-deps git python g++ make \
 \
 # Install node.js dependencies
@@ -15,4 +15,4 @@ RUN apk add --update \
 \
 # Clean up build dependencies
 && apk del .build-deps
-CMD ["node", "./Shards.js"]
+CMD ["node", "./index.js"]
