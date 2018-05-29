@@ -1,6 +1,5 @@
 require('bluebird')
 const Core = require('Core')
-// const config = require('../config.json')
 const RainCache = require('raincache')
 
 const log = new Core.Logger()
