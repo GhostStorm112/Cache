@@ -10,8 +10,9 @@
 		"test": "eslint ."
 	},
 	"dependencies": {
-		"raincache": "DasWolke/RainCache#dev",
-		"Core": "https://gitlab.com/GhostStorm/Core.git"
+		"Core": "https://gitlab.com/GhostStorm/Core.git",
+		"ghost-core": "https://gitlab.com/GhostStorm/Core.git",
+		"raincache": "DasWolke/RainCache#dev"
 	},
 	"devDependencies": {
 		"dotenv": "6.0.0",
