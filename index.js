@@ -5,13 +5,9 @@ const Core = require('Core')
 const RainCache = require('raincache')
 const AmqpConnector = require('./DetailedAmqpConnector')
 const log = new Core.Logger()
-let StatsD
+const StatsD = require('hot-shots')
 let statsClient
-try {
-  StatsD = require('hot-shots')
-} catch (e) {
 
-}
 if (process.env.STATSD) {
   statsClient = new StatsD({
     host: process.env.STATSD_HOST,
