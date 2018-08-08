@@ -1,4 +1,4 @@
-FROM node:10.4.1-alpine
+FROM node:10.8.0-alpine
 LABEL name "Ghost-Worker"
 LABEL maintainer "_112"
 COPY ./ /app
