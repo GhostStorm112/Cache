@@ -6,6 +6,7 @@ class DetailedAmqpConnector extends AmqpConnector {
     if (statsClient) {
       this.statsClient = statsClient
       this.on('event', (event) => {
+        console.log(event)
         event.receive = Date.now()
         this.recordEvent('incoming', event)
       })
@@ -29,6 +30,7 @@ class DetailedAmqpConnector extends AmqpConnector {
   }
 
   async send (event) {
+    console.log(event)
     if (this.statsClient) {
       this.recordEvent('outgoing', event)
       this.recordEventTime(Date.now() - event.receive, event)

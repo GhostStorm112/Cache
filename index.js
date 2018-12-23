@@ -1,7 +1,7 @@
 require('bluebird')
 require('dotenv').config()
 
-const Core = require('Core')
+const Core = require('ghost-core')
 const RainCache = require('raincache')
 const AmqpConnector = require('./DetailedAmqpConnector')
 const log = new Core.Logger()

@@ -10,7 +10,7 @@
 		"test": "eslint ."
 	},
 	"dependencies": {
-		"Core": "https://gitlab.com/GhostStorm/Core.git",
+		"ghost-core": "https://gitlab.com/GhostStorm/Core.git",
 		"hot-shots": "^5.6.1",
 		"raincache": "DasWolke/RainCache#dev"
 	},
